@@ -18,12 +18,12 @@ spring:
 #        format_sql: true
 token:
   signing:
-    key: 413F4428472B4B6250655368566D5970337336763979244226452948404D6351
+    key: SECRET_KEY
   refresh:
     token:
       expiration: 2592000000
     signing:
-      key: 413F4428472B4B6250655368566D5970337336763979244226452948404D6351
+      key: SECRET_KEY
   access:
     token:
       expiration: 2592000000 # Set the expiration time for the access token in milliseconds (e.g., 1 hour)
