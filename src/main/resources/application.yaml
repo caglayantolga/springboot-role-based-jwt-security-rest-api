@@ -1,0 +1,29 @@
+spring:
+  devtools:
+    restart:
+      poll-interval: 2s
+      quiet-period: 1s
+  datasource:
+    url: jdbc:h2:mem:security
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+#    show-sql: true
+#    properties:
+#      hibernate:
+#        format_sql: true
+token:
+  signing:
+    key: 413F4428472B4B6250655368566D5970337336763979244226452948404D6351
+  refresh:
+    token:
+      expiration: 2592000000
+    signing:
+      key: 413F4428472B4B6250655368566D5970337336763979244226452948404D6351
+  access:
+    token:
+      expiration: 2592000000 # Set the expiration time for the access token in milliseconds (e.g., 1 hour)
